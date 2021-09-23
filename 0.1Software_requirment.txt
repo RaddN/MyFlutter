@@ -1,4 +1,5 @@
 android studio
 flutter sdk
+git
 env path set up
 env homesomething set up
