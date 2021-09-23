@@ -1,0 +1,4 @@
+android studio
+flutter sdk
+env path set up
+env homesomething set up
