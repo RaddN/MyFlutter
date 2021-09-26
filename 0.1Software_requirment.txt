@@ -3,3 +3,12 @@ flutter sdk
 git
 env path set up
 env homesomething set up
+plugin:
+
+
+
+android problem:
+1. SDk problem
+soluation: android setting-> android sdk-> android sdk command-line tools (latest)-> apply->install
+2. Android licence
+soluation: 
