@@ -11,4 +11,6 @@ android problem:
 1. SDk problem
 soluation: android setting-> android sdk-> android sdk command-line tools (latest)-> apply->install
 2. Android licence
-soluation: 
+soluation: run flutter doctor
+run commend 
+type y for every aggreement
