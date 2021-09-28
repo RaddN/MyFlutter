@@ -6,6 +6,7 @@ void main() {
 }
 
 class BeautyApp extends StatelessWidget {
+  //extends is a inheritance property. akta veriable theke arekti veriable a data access korar jonno inheritance use hoy.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
