@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart'; // it's import for runApp function.
+import 'package:flutter/cupertino.dart'; // it's import for ios platfrom.
 import 'package:flutter/material.dart'; // it's imported for materialapp function.
 
 void main() {
