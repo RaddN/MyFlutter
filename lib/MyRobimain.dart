@@ -46,7 +46,7 @@ class Myrobi extends StatelessWidget {
         children: [
           Container(
             padding: EdgeInsets.fromLTRB(15, 0, 15, 0),
-            height: 110.0,
+            height: 115.0,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -66,12 +66,25 @@ class Myrobi extends StatelessWidget {
                     Expanded(
                       flex: 5,
                       child: TextButton.icon(
+                          style: ButtonStyle(
+                              padding:
+                                  MaterialStateProperty.all(EdgeInsets.all(0)),
+                              backgroundColor: MaterialStateProperty.all(
+                                Color.fromRGBO(227, 164, 131, 1),
+                              ),
+                              shape: MaterialStateProperty.all(
+                                  RoundedRectangleBorder(
+                                      borderRadius:
+                                          BorderRadius.circular(20)))),
                           onPressed: () {},
                           icon: Icon(
                             Icons.wine_bar,
                             color: Colors.white,
                           ),
-                          label: Text('Tap to see coins')),
+                          label: Text(
+                            'Tap to see coins',
+                            style: TextStyle(color: Colors.white),
+                          )),
                     ),
                   ],
                 ),
@@ -85,20 +98,19 @@ class Myrobi extends StatelessWidget {
                   children: [
                     Expanded(
                         flex: 5,
-                        child: Container(
-                          height: 40.0,
-                          child: Text(
-                            "Recharge Now",
-                            style: TextStyle(
-                              color: Colors.white,
-                            ),
-                          ),
-                          decoration: BoxDecoration(
-                            color: Color.fromRGBO(0, 131, 1, 1),
-                            borderRadius: BorderRadius.circular(15),
-                          ),
-                          alignment: Alignment.center,
-                        )),
+                        child: TextButton(
+                            style: ButtonStyle(
+                                backgroundColor:
+                                    MaterialStateProperty.all(Colors.green),
+                                shape: MaterialStateProperty.all(
+                                    RoundedRectangleBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(10)))),
+                            onPressed: () {},
+                            child: Text(
+                              'Recharge Now',
+                              style: TextStyle(color: Colors.white),
+                            ))),
                     Expanded(
                         flex: 5,
                         child: Padding(
