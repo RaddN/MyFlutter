@@ -43,9 +43,9 @@ class Myrobi extends StatelessWidget {
         ],
       ),
       body: ListView(
-        padding: EdgeInsets.fromLTRB(15, 0, 15, 0),
         children: [
           Container(
+            padding: EdgeInsets.fromLTRB(15, 0, 15, 0),
             height: 110.0,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -63,7 +63,7 @@ class Myrobi extends StatelessWidget {
                         ),
                       ),
                     ),
-                      Expanded(
+                    Expanded(
                       flex: 5,
                       child: TextButton.icon(
                           onPressed: () {},
@@ -73,49 +73,49 @@ class Myrobi extends StatelessWidget {
                           ),
                           label: Text('Tap to see coins')),
                     ),
-                    ],
+                  ],
+                ),
+                Text(
+                  "Acquisition Pack + 4 active packs",
+                  style: TextStyle(
+                    color: Colors.grey,
                   ),
-                  Text(
-                    "Acquisition Pack + 4 active packs",
-                    style: TextStyle(
-                      color: Colors.grey,
-                    ),
-                  ),
-                  Row(
-                    children: [
-                      Expanded(
-                          flex: 5,
-                          child: Container(
-                            height: 40.0,
-                            child: Text(
-                              "Recharge Now",
-                              style: TextStyle(
-                                color: Colors.white,
-                              ),
+                ),
+                Row(
+                  children: [
+                    Expanded(
+                        flex: 5,
+                        child: Container(
+                          height: 40.0,
+                          child: Text(
+                            "Recharge Now",
+                            style: TextStyle(
+                              color: Colors.white,
                             ),
-                            decoration: BoxDecoration(
-                              color: Color.fromRGBO(0, 131, 1, 1),
-                              borderRadius: BorderRadius.circular(15),
-                            ),
-                            alignment: Alignment.center,
-                          )),
-                      Expanded(
-                          flex: 5,
-                          child: Padding(
-                            padding: const EdgeInsets.only(left: 20),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  "Quick Recharges",
-                                  style: TextStyle(
-                                    fontSize: 18.0,
-                                    color: Colors.grey,
-                                  ),
+                          ),
+                          decoration: BoxDecoration(
+                            color: Color.fromRGBO(0, 131, 1, 1),
+                            borderRadius: BorderRadius.circular(15),
+                          ),
+                          alignment: Alignment.center,
+                        )),
+                    Expanded(
+                        flex: 5,
+                        child: Padding(
+                          padding: const EdgeInsets.only(left: 20),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Quick Recharges",
+                                style: TextStyle(
+                                  fontSize: 18.0,
+                                  color: Colors.grey,
                                 ),
-                                Row(
-                                  mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
+                              ),
+                              Row(
+                                mainAxisAlignment:
+                                MainAxisAlignment.spaceBetween,
                                 children: [
                                   Text(
                                     "৳50",
@@ -127,39 +127,39 @@ class Myrobi extends StatelessWidget {
                                   ),
                                   Container(
                                     height: 15,
-                                      width: 2,
-                                      color: Colors.grey,
+                                    width: 2,
+                                    color: Colors.grey,
+                                  ),
+                                  Text(
+                                    "৳100",
+                                    style: TextStyle(
+                                      fontSize: 16.0,
+                                      color: Colors.red,
+                                      fontWeight: FontWeight.bold,
                                     ),
-                                    Text(
-                                      "৳100",
-                                      style: TextStyle(
-                                        fontSize: 16.0,
-                                        color: Colors.red,
-                                        fontWeight: FontWeight.bold,
-                                      ),
+                                  ),
+                                  Container(
+                                    height: 15,
+                                    width: 2,
+                                    color: Colors.grey,
+                                  ),
+                                  Text(
+                                    "৳159",
+                                    style: TextStyle(
+                                      fontSize: 16.0,
+                                      color: Colors.red,
+                                      fontWeight: FontWeight.bold,
                                     ),
-                                    Container(
-                                      height: 15,
-                                      width: 2,
-                                      color: Colors.grey,
-                                    ),
-                                    Text(
-                                      "৳159",
-                                      style: TextStyle(
-                                        fontSize: 16.0,
-                                        color: Colors.red,
-                                        fontWeight: FontWeight.bold,
-                                      ),
-                                    ),
-                                  ],
-                                )
-                              ],
-                            ),
-                          ))
-                    ],
-                  )
-                ],
-              ),
+                                  ),
+                                ],
+                              )
+                            ],
+                          ),
+                        ))
+                  ],
+                )
+              ],
+            ),
             ),
             Divider(
               thickness: 5,
@@ -350,17 +350,19 @@ class Myrobi extends StatelessWidget {
                               ),
                             ),
                           ],
-                        ),
-                        //
-                      )
-                    ],
-                  ),
-                  // Balance end
-                ],
-              ),
+                      ),
+                      //
+                    )
+                  ],
+                ),
+                // Balance end
+              ],
             ),
-            Divider(),
-            Text(
+          ),
+          Divider(),
+          Padding(
+            padding: EdgeInsets.fromLTRB(15, 0, 15, 0),
+            child: Text(
               'QUICK LINKS',
               style: TextStyle(
                 color: Colors.black87,
@@ -368,15 +370,16 @@ class Myrobi extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            SizedBox(
-              height: 100,
-              child: ListView(
-                scrollDirection: Axis.horizontal,
-                children: [
-                  Row(
-                    children: [
-                      Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          ),
+          SizedBox(
+            height: 100,
+            child: ListView(
+              scrollDirection: Axis.horizontal,
+              children: [
+                Row(
+                  children: [
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Container(
                             width: 90,
@@ -699,30 +702,33 @@ class Myrobi extends StatelessWidget {
                               ],
                             ),
                           ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ],
-              ),
+                      ],
+                    ),
+                  ],
+                ),
+              ],
             ),
-            Container(
-              height: 15,
-            ),
-            Text(
+          ),
+          Container(
+            height: 15,
+          ),
+          Padding(
+            padding: EdgeInsets.fromLTRB(15, 0, 15, 0),
+            child: Text(
               'POPULAR OFFERS',
               style: TextStyle(fontSize: 18.0),
             ),
-            Container(
-              height: 15,
-            ),
-            InkWell(
-                onTap: () {},
-                child: Image.asset('assets/robi/5e00b18151379.jpg')),
-            Container(
-              height: 15,
-            ),
-            Image.asset('assets/robi/Robi 1GB Data at Tk. 89 for 7 days.png'),
+          ),
+          Container(
+            height: 15,
+          ),
+          InkWell(
+              onTap: () {},
+              child: Image.asset('assets/robi/5e00b18151379.jpg')),
+          Container(
+            height: 15,
+          ),
+          Image.asset('assets/robi/Robi 1GB Data at Tk. 89 for 7 days.png'),
             Container(
               height: 15,
             ),
@@ -730,220 +736,223 @@ class Myrobi extends StatelessWidget {
             Container(
               height: 15,
             ),
-            //view all offers button
-            Column(
+          //view all offers button
+          Column(
+            children: [
+              OutlinedButton(onPressed: () {}, child: Text('View all offers')),
+            ],
+          ),
+          Container(
+            height: 15,
+          ),
+          Padding(
+            padding: EdgeInsets.fromLTRB(15, 0, 15, 0),
+            child: Text('FAVOURITE APPS'),
+          ),
+          Container(
+            height: 15,
+          ),
+          // Favourite apps
+          SizedBox(
+            height: 110,
+            child: ListView(
+              padding: EdgeInsets.fromLTRB(15, 0, 15, 0),
+              scrollDirection: Axis.horizontal,
               children: [
-                OutlinedButton(
-                    onPressed: () {}, child: Text('View all offers')),
+                Row(
+                  children: [
+                    Container(
+                      width: 80,
+                      child: Column(
+                        children: [
+                          Image.asset('assets/robi/mynetwork.png'),
+                          Text('My Network')
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      width: 15,
+                    ),
+                    Container(
+                      width: 80,
+                      child: Column(
+                        children: [
+                          Image.asset('assets/robi/mynetwork.png'),
+                          Text('My Network')
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      width: 15,
+                    ),
+                    Container(
+                      width: 80,
+                      child: Column(
+                        children: [
+                          Image.asset('assets/robi/mynetwork.png'),
+                          Text('My Network')
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      width: 15,
+                    ),
+                    Container(
+                      width: 80,
+                      child: Column(
+                        children: [
+                          Image.asset('assets/robi/mynetwork.png'),
+                          Text('My Network')
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      width: 15,
+                    ),
+                    Container(
+                      width: 80,
+                      child: Column(
+                        children: [
+                          Image.asset('assets/robi/mynetwork.png'),
+                          Text('My Network')
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      width: 15,
+                    ),
+                    Container(
+                      width: 80,
+                      child: Column(
+                        children: [
+                          Image.asset('assets/robi/mynetwork.png'),
+                          Text('My Network')
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      width: 15,
+                    ),
+                    Container(
+                      width: 80,
+                      child: Column(
+                        children: [
+                          Image.asset('assets/robi/mynetwork.png'),
+                          Text('My Network')
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      width: 15,
+                    ),
+                    Container(
+                      width: 80,
+                      child: Column(
+                        children: [
+                          Image.asset('assets/robi/mynetwork.png'),
+                          Text('My Network')
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      width: 15,
+                    ),
+                    Container(
+                      width: 80,
+                      child: Column(
+                        children: [
+                          Image.asset('assets/robi/mynetwork.png'),
+                          Text('My Network')
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      width: 15,
+                    ),
+                    Container(
+                      width: 80,
+                      child: Column(
+                        children: [
+                          Image.asset('assets/robi/mynetwork.png'),
+                          Text('My Network')
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      width: 15,
+                    ),
+                    Container(
+                      width: 80,
+                      child: Column(
+                        children: [
+                          Image.asset('assets/robi/mynetwork.png'),
+                          Text('My Network')
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      width: 15,
+                    ),
+                    Container(
+                      width: 80,
+                      child: Column(
+                        children: [
+                          Image.asset('assets/robi/mynetwork.png'),
+                          Text('My Network')
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      width: 15,
+                    ),
+                    Container(
+                      width: 80,
+                      child: Column(
+                        children: [
+                          Image.asset('assets/robi/mynetwork.png'),
+                          Text('My Network')
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      width: 15,
+                    ),
+                    Container(
+                      width: 80,
+                      child: Column(
+                        children: [
+                          Image.asset('assets/robi/mynetwork.png'),
+                          Text('My Network')
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      width: 15,
+                    ),
+                    Container(
+                      width: 80,
+                      child: Column(
+                        children: [
+                          Image.asset('assets/robi/mynetwork.png'),
+                          Text('My Network')
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      width: 15,
+                    ),
+                    Container(
+                      width: 80,
+                      child: Column(
+                        children: [
+                          Image.asset('assets/robi/mynetwork.png'),
+                          Text('My Network')
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
               ],
-            ),
-            Container(
-              height: 15,
-            ),
-            Text('FAVOURITE APPS'),
-            Container(
-              height: 15,
-            ),
-            // Favourite apps
-            SizedBox(
-              height: 110,
-              child: ListView(
-                scrollDirection: Axis.horizontal,
-                children: [
-                  Row(
-                    children: [
-                      Container(
-                        width: 80,
-                        child: Column(
-                          children: [
-                            Image.asset('assets/robi/mynetwork.png'),
-                            Text('My Network')
-                          ],
-                        ),
-                      ),
-                      SizedBox(
-                        width: 15,
-                      ),
-                      Container(
-                        width: 80,
-                        child: Column(
-                          children: [
-                            Image.asset('assets/robi/mynetwork.png'),
-                            Text('My Network')
-                          ],
-                        ),
-                      ),
-                      SizedBox(
-                        width: 15,
-                      ),
-                      Container(
-                        width: 80,
-                        child: Column(
-                          children: [
-                            Image.asset('assets/robi/mynetwork.png'),
-                            Text('My Network')
-                          ],
-                        ),
-                      ),
-                      SizedBox(
-                        width: 15,
-                      ),
-                      Container(
-                        width: 80,
-                        child: Column(
-                          children: [
-                            Image.asset('assets/robi/mynetwork.png'),
-                            Text('My Network')
-                          ],
-                        ),
-                      ),
-                      SizedBox(
-                        width: 15,
-                      ),
-                      Container(
-                        width: 80,
-                        child: Column(
-                          children: [
-                            Image.asset('assets/robi/mynetwork.png'),
-                            Text('My Network')
-                          ],
-                        ),
-                      ),
-                      SizedBox(
-                        width: 15,
-                      ),
-                      Container(
-                        width: 80,
-                        child: Column(
-                          children: [
-                            Image.asset('assets/robi/mynetwork.png'),
-                            Text('My Network')
-                          ],
-                        ),
-                      ),
-                      SizedBox(
-                        width: 15,
-                      ),
-                      Container(
-                        width: 80,
-                        child: Column(
-                          children: [
-                            Image.asset('assets/robi/mynetwork.png'),
-                            Text('My Network')
-                          ],
-                        ),
-                      ),
-                      SizedBox(
-                        width: 15,
-                      ),
-                      Container(
-                        width: 80,
-                        child: Column(
-                          children: [
-                            Image.asset('assets/robi/mynetwork.png'),
-                            Text('My Network')
-                          ],
-                        ),
-                      ),
-                      SizedBox(
-                        width: 15,
-                      ),
-                      Container(
-                        width: 80,
-                        child: Column(
-                          children: [
-                            Image.asset('assets/robi/mynetwork.png'),
-                            Text('My Network')
-                          ],
-                        ),
-                      ),
-                      SizedBox(
-                        width: 15,
-                      ),
-                      Container(
-                        width: 80,
-                        child: Column(
-                          children: [
-                            Image.asset('assets/robi/mynetwork.png'),
-                            Text('My Network')
-                          ],
-                        ),
-                      ),
-                      SizedBox(
-                        width: 15,
-                      ),
-                      Container(
-                        width: 80,
-                        child: Column(
-                          children: [
-                            Image.asset('assets/robi/mynetwork.png'),
-                            Text('My Network')
-                          ],
-                        ),
-                      ),
-                      SizedBox(
-                        width: 15,
-                      ),
-                      Container(
-                        width: 80,
-                        child: Column(
-                          children: [
-                            Image.asset('assets/robi/mynetwork.png'),
-                            Text('My Network')
-                          ],
-                        ),
-                      ),
-                      SizedBox(
-                        width: 15,
-                      ),
-                      Container(
-                        width: 80,
-                        child: Column(
-                          children: [
-                            Image.asset('assets/robi/mynetwork.png'),
-                            Text('My Network')
-                          ],
-                        ),
-                      ),
-                      SizedBox(
-                        width: 15,
-                      ),
-                      Container(
-                        width: 80,
-                        child: Column(
-                          children: [
-                            Image.asset('assets/robi/mynetwork.png'),
-                            Text('My Network')
-                          ],
-                        ),
-                      ),
-                      SizedBox(
-                        width: 15,
-                      ),
-                      Container(
-                        width: 80,
-                        child: Column(
-                          children: [
-                            Image.asset('assets/robi/mynetwork.png'),
-                            Text('My Network')
-                          ],
-                        ),
-                      ),
-                      SizedBox(
-                        width: 15,
-                      ),
-                      Container(
-                        width: 80,
-                        child: Column(
-                          children: [
-                            Image.asset('assets/robi/mynetwork.png'),
-                            Text('My Network')
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                ],
               ),
             ),
             Column(
@@ -955,42 +964,72 @@ class Myrobi extends StatelessWidget {
               height: 15,
             ),
             SizedBox(
-              height: 300,
-              child: ListView(
-                scrollDirection: Axis.horizontal,
-                children: [
-                  Row(
-                    children: [
-                      Container(
-                        child: Image.asset('assets/robi/5e00b18151379.jpg'),
+              height: 200,
+            child: ListView(
+              scrollDirection: Axis.horizontal,
+              children: [
+                Row(
+                  children: [
+                    Container(
+                      child: Image.asset(
+                        'assets/robi/5e00b18151379.jpg',
+                        width: 400,
                       ),
-                      Container(
-                        child: Image.asset('assets/robi/5e00b18151379.jpg'),
+                    ),
+                    Container(
+                      child: Image.asset(
+                        'assets/robi/5e00b18151379.jpg',
+                        width: 400,
                       ),
+                    ),
                       Container(
-                        child: Image.asset('assets/robi/5e00b18151379.jpg'),
+                        child: Image.asset(
+                        'assets/robi/5e00b18151379.jpg',
+                        width: 400,
                       ),
+                    ),
                       Container(
-                        child: Image.asset('assets/robi/5e00b18151379.jpg'),
+                        child: Image.asset(
+                        'assets/robi/5e00b18151379.jpg',
+                        width: 400,
                       ),
+                    ),
                       Container(
-                        child: Image.asset('assets/robi/5e00b18151379.jpg'),
+                        child: Image.asset(
+                        'assets/robi/5e00b18151379.jpg',
+                        width: 400,
                       ),
+                    ),
                       Container(
-                        child: Image.asset('assets/robi/5e00b18151379.jpg'),
+                        child: Image.asset(
+                        'assets/robi/5e00b18151379.jpg',
+                        width: 400,
                       ),
+                    ),
                       Container(
-                        child: Image.asset('assets/robi/5e00b18151379.jpg'),
+                        child: Image.asset(
+                        'assets/robi/5e00b18151379.jpg',
+                        width: 400,
                       ),
+                    ),
                       Container(
-                        child: Image.asset('assets/robi/5e00b18151379.jpg'),
+                        child: Image.asset(
+                        'assets/robi/5e00b18151379.jpg',
+                        width: 400,
                       ),
+                    ),
                       Container(
-                        child: Image.asset('assets/robi/5e00b18151379.jpg'),
+                        child: Image.asset(
+                        'assets/robi/5e00b18151379.jpg',
+                        width: 400,
                       ),
+                    ),
                       Container(
-                        child: Image.asset('assets/robi/5e00b18151379.jpg'),
+                        child: Image.asset(
+                        'assets/robi/5e00b18151379.jpg',
+                        width: 400,
                       ),
+                    ),
                     ],
                   ),
                 ],
