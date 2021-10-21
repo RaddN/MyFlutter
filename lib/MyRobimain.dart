@@ -42,45 +42,37 @@ class Myrobi extends StatelessWidget {
           ),
         ],
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(15.0),
-        child: ListView(
-          children: [
-            Container(
-              height: 100.0,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
-                    children: [
-                      Expanded(
-                        flex: 7,
-                        child: Text(
-                          "Good Morning",
-                          style: TextStyle(
-                            fontSize: 20,
-                            color: Colors.grey,
-                          ),
+      body: ListView(
+        padding: EdgeInsets.fromLTRB(15, 0, 15, 0),
+        children: [
+          Container(
+            height: 110.0,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    Expanded(
+                      flex: 5,
+                      child: Text(
+                        "Good Morning",
+                        style: TextStyle(
+                          fontSize: 20,
+                          color: Colors.grey,
                         ),
                       ),
+                    ),
                       Expanded(
-                        flex: 3,
-                        child: Container(
-                          height: 30.0,
-                          decoration: BoxDecoration(
-                              color: Color.fromRGBO(227, 164, 131, 1),
-                              borderRadius: BorderRadius.circular(15.0)),
-                          child: Text(
-                            "Tap to see coins",
-                            style: TextStyle(
-                              color: Colors.white,
-                              //Rain Hossain
-                            ),
+                      flex: 5,
+                      child: TextButton.icon(
+                          onPressed: () {},
+                          icon: Icon(
+                            Icons.wine_bar,
+                            color: Colors.white,
                           ),
-                          alignment: Alignment.center,
-                        ),
-                      ),
+                          label: Text('Tap to see coins')),
+                    ),
                     ],
                   ),
                   Text(
@@ -122,22 +114,22 @@ class Myrobi extends StatelessWidget {
                                   ),
                                 ),
                                 Row(
-                                  children: [
-                                    Text(
-                                      "৳50",
-                                      style: TextStyle(
-                                        fontSize: 16.0,
-                                        color: Colors.red,
-                                        fontWeight: FontWeight.bold,
-                                      ),
+                                  mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    "৳50",
+                                    style: TextStyle(
+                                      fontSize: 16.0,
+                                      color: Colors.red,
+                                      fontWeight: FontWeight.bold,
                                     ),
-                                    VerticalDivider(),
-                                    Container(
-                                      height: 15,
+                                  ),
+                                  Container(
+                                    height: 15,
                                       width: 2,
                                       color: Colors.grey,
                                     ),
-                                    VerticalDivider(),
                                     Text(
                                       "৳100",
                                       style: TextStyle(
@@ -146,13 +138,11 @@ class Myrobi extends StatelessWidget {
                                         fontWeight: FontWeight.bold,
                                       ),
                                     ),
-                                    VerticalDivider(),
                                     Container(
                                       height: 15,
                                       width: 2,
                                       color: Colors.grey,
                                     ),
-                                    VerticalDivider(),
                                     Text(
                                       "৳159",
                                       style: TextStyle(
@@ -1008,7 +998,6 @@ class Myrobi extends StatelessWidget {
             )
           ],
         ),
-      ),
     );
   }
 }
