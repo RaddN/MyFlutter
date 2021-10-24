@@ -6,16 +6,13 @@ class Gridview extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: GridView(
-        // scrollDirection: Axis.horizontal,
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 2,
-          mainAxisSpacing: 15.0,
-          crossAxisSpacing: 15.0,
-          childAspectRatio: 20 / 20,
-        ),
-        children: [
-          Card(
+      body: GridView.count(
+        crossAxisCount: 2,
+        mainAxisSpacing: 15.0,
+        crossAxisSpacing: 15.0,
+        childAspectRatio: 20 / 20,
+        children: List.generate(100, (index) {
+          return Card(
             child: Container(
               color: Colors.greenAccent,
               child: Column(
@@ -23,153 +20,173 @@ class Gridview extends StatelessWidget {
                 children: [Icon(Icons.dashboard), Text('Dashboard')],
               ),
             ),
-          ),
-          Card(
-            child: Container(
-              color: Colors.greenAccent,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [Icon(Icons.dashboard), Text('Dashboard')],
-              ),
-            ),
-          ),
-          Card(
-            child: Container(
-              color: Colors.greenAccent,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [Icon(Icons.dashboard), Text('Dashboard')],
-              ),
-            ),
-          ),
-          Card(
-            child: Container(
-              color: Colors.greenAccent,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [Icon(Icons.dashboard), Text('Dashboard')],
-              ),
-            ),
-          ),
-          Card(
-            child: Container(
-              color: Colors.greenAccent,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [Icon(Icons.dashboard), Text('Dashboard')],
-              ),
-            ),
-          ),
-          Card(
-            child: Container(
-              color: Colors.greenAccent,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [Icon(Icons.dashboard), Text('Dashboard')],
-              ),
-            ),
-          ),
-          Card(
-            child: Container(
-              color: Colors.greenAccent,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [Icon(Icons.dashboard), Text('Dashboard')],
-              ),
-            ),
-          ),
-          Card(
-            child: Container(
-              color: Colors.greenAccent,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [Icon(Icons.dashboard), Text('Dashboard')],
-              ),
-            ),
-          ),
-          Card(
-            child: Container(
-              color: Colors.greenAccent,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [Icon(Icons.dashboard), Text('Dashboard')],
-              ),
-            ),
-          ),
-          Card(
-            child: Container(
-              color: Colors.greenAccent,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [Icon(Icons.dashboard), Text('Dashboard')],
-              ),
-            ),
-          ),
-          Card(
-            child: Container(
-              color: Colors.greenAccent,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [Icon(Icons.dashboard), Text('Dashboard')],
-              ),
-            ),
-          ),
-          Card(
-            child: Container(
-              color: Colors.greenAccent,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [Icon(Icons.dashboard), Text('Dashboard')],
-              ),
-            ),
-          ),
-          Card(
-            child: Container(
-              color: Colors.greenAccent,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [Icon(Icons.dashboard), Text('Dashboard')],
-              ),
-            ),
-          ),
-          Card(
-            child: Container(
-              color: Colors.greenAccent,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [Icon(Icons.dashboard), Text('Dashboard')],
-              ),
-            ),
-          ),
-          Card(
-            child: Container(
-              color: Colors.greenAccent,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [Icon(Icons.dashboard), Text('Dashboard')],
-              ),
-            ),
-          ),
-          Card(
-            child: Container(
-              color: Colors.greenAccent,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [Icon(Icons.dashboard), Text('Dashboard')],
-              ),
-            ),
-          ),
-          Card(
-            child: Container(
-              color: Colors.greenAccent,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [Icon(Icons.dashboard), Text('Dashboard')],
-              ),
-            ),
-          ),
-        ],
+          );
+        }),
       ),
+      // GridView(
+      //   // scrollDirection: Axis.horizontal,
+      //   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+      //     crossAxisCount: 2,
+      //     mainAxisSpacing: 15.0,
+      //     crossAxisSpacing: 15.0,
+      //     childAspectRatio: 20 / 20,
+      //   ),
+      //   children: [
+      //     Card(
+      //       child: Container(
+      //         color: Colors.greenAccent,
+      //         child: Column(
+      //           mainAxisAlignment: MainAxisAlignment.center,
+      //           children: [Icon(Icons.dashboard), Text('Dashboard')],
+      //         ),
+      //       ),
+      //     ),
+      //     Card(
+      //       child: Container(
+      //         color: Colors.greenAccent,
+      //         child: Column(
+      //           mainAxisAlignment: MainAxisAlignment.center,
+      //           children: [Icon(Icons.dashboard), Text('Dashboard')],
+      //         ),
+      //       ),
+      //     ),
+      //     Card(
+      //       child: Container(
+      //         color: Colors.greenAccent,
+      //         child: Column(
+      //           mainAxisAlignment: MainAxisAlignment.center,
+      //           children: [Icon(Icons.dashboard), Text('Dashboard')],
+      //         ),
+      //       ),
+      //     ),
+      //     Card(
+      //       child: Container(
+      //         color: Colors.greenAccent,
+      //         child: Column(
+      //           mainAxisAlignment: MainAxisAlignment.center,
+      //           children: [Icon(Icons.dashboard), Text('Dashboard')],
+      //         ),
+      //       ),
+      //     ),
+      //     Card(
+      //       child: Container(
+      //         color: Colors.greenAccent,
+      //         child: Column(
+      //           mainAxisAlignment: MainAxisAlignment.center,
+      //           children: [Icon(Icons.dashboard), Text('Dashboard')],
+      //         ),
+      //       ),
+      //     ),
+      //     Card(
+      //       child: Container(
+      //         color: Colors.greenAccent,
+      //         child: Column(
+      //           mainAxisAlignment: MainAxisAlignment.center,
+      //           children: [Icon(Icons.dashboard), Text('Dashboard')],
+      //         ),
+      //       ),
+      //     ),
+      //     Card(
+      //       child: Container(
+      //         color: Colors.greenAccent,
+      //         child: Column(
+      //           mainAxisAlignment: MainAxisAlignment.center,
+      //           children: [Icon(Icons.dashboard), Text('Dashboard')],
+      //         ),
+      //       ),
+      //     ),
+      //     Card(
+      //       child: Container(
+      //         color: Colors.greenAccent,
+      //         child: Column(
+      //           mainAxisAlignment: MainAxisAlignment.center,
+      //           children: [Icon(Icons.dashboard), Text('Dashboard')],
+      //         ),
+      //       ),
+      //     ),
+      //     Card(
+      //       child: Container(
+      //         color: Colors.greenAccent,
+      //         child: Column(
+      //           mainAxisAlignment: MainAxisAlignment.center,
+      //           children: [Icon(Icons.dashboard), Text('Dashboard')],
+      //         ),
+      //       ),
+      //     ),
+      //     Card(
+      //       child: Container(
+      //         color: Colors.greenAccent,
+      //         child: Column(
+      //           mainAxisAlignment: MainAxisAlignment.center,
+      //           children: [Icon(Icons.dashboard), Text('Dashboard')],
+      //         ),
+      //       ),
+      //     ),
+      //     Card(
+      //       child: Container(
+      //         color: Colors.greenAccent,
+      //         child: Column(
+      //           mainAxisAlignment: MainAxisAlignment.center,
+      //           children: [Icon(Icons.dashboard), Text('Dashboard')],
+      //         ),
+      //       ),
+      //     ),
+      //     Card(
+      //       child: Container(
+      //         color: Colors.greenAccent,
+      //         child: Column(
+      //           mainAxisAlignment: MainAxisAlignment.center,
+      //           children: [Icon(Icons.dashboard), Text('Dashboard')],
+      //         ),
+      //       ),
+      //     ),
+      //     Card(
+      //       child: Container(
+      //         color: Colors.greenAccent,
+      //         child: Column(
+      //           mainAxisAlignment: MainAxisAlignment.center,
+      //           children: [Icon(Icons.dashboard), Text('Dashboard')],
+      //         ),
+      //       ),
+      //     ),
+      //     Card(
+      //       child: Container(
+      //         color: Colors.greenAccent,
+      //         child: Column(
+      //           mainAxisAlignment: MainAxisAlignment.center,
+      //           children: [Icon(Icons.dashboard), Text('Dashboard')],
+      //         ),
+      //       ),
+      //     ),
+      //     Card(
+      //       child: Container(
+      //         color: Colors.greenAccent,
+      //         child: Column(
+      //           mainAxisAlignment: MainAxisAlignment.center,
+      //           children: [Icon(Icons.dashboard), Text('Dashboard')],
+      //         ),
+      //       ),
+      //     ),
+      //     Card(
+      //       child: Container(
+      //         color: Colors.greenAccent,
+      //         child: Column(
+      //           mainAxisAlignment: MainAxisAlignment.center,
+      //           children: [Icon(Icons.dashboard), Text('Dashboard')],
+      //         ),
+      //       ),
+      //     ),
+      //     Card(
+      //       child: Container(
+      //         color: Colors.greenAccent,
+      //         child: Column(
+      //           mainAxisAlignment: MainAxisAlignment.center,
+      //           children: [Icon(Icons.dashboard), Text('Dashboard')],
+      //         ),
+      //       ),
+      //     ),
+      //   ],
+      // ),
     );
   }
 }
