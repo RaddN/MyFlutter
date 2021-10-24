@@ -275,8 +275,8 @@ class Myrobi extends StatelessWidget {
                                         "148 Mins",
                                         style: TextStyle(
                                           fontSize: 16,
-                                          color:
-                                              Color.fromRGBO(236, 175, 176, 1),
+                                          color: Color.fromRGBO(
+                                              226, 113, 134, 1.0),
                                         ),
                                       ),
                                       Text(
