@@ -224,38 +224,38 @@ class Daraz_home extends StatelessWidget {
               ],
             ),
           ),
-          Container(
-            height: 120,
-            child: GridView.builder(
-              scrollDirection: Axis.horizontal,
-              gridDelegate:
-                  SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 1),
-              itemBuilder: (context, index) {
-                return Column(
-                  children: [
-                    Image.network(
-                      'https://www.collinsdictionary.com/images/full/tshirt_204029461_1000.jpg',
-                      height: 100,
-                    ),
-                    Container(
-                      height: 10,
-                      decoration: BoxDecoration(
-                          color: Color.fromRGBO(249, 192, 192, 1.0),
-                          borderRadius: BorderRadius.circular(15)),
-                      child: Container(
-                        height: 10,
-                        width: 10,
-                        decoration: BoxDecoration(
-                            color: Color.fromRGBO(248, 5, 5, 1.0),
-                            borderRadius: BorderRadius.circular(15)),
-                        child: Text('22'),
-                      ),
-                    )
-                  ],
-                );
-              },
-            ),
-          )
+          // Container(
+          //   height: 120,
+          //   child: GridView.builder(
+          //     scrollDirection: Axis.horizontal,
+          //     gridDelegate:
+          //         SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 1),
+          //     itemBuilder: (context, index) {
+          //       return Column(
+          //         children: [
+          //           Image.network(
+          //             'https://www.collinsdictionary.com/images/full/tshirt_204029461_1000.jpg',
+          //             height: 100,
+          //           ),
+          //           Container(
+          //             height: 10,
+          //             decoration: BoxDecoration(
+          //                 color: Color.fromRGBO(249, 192, 192, 1.0),
+          //                 borderRadius: BorderRadius.circular(15)),
+          //             child: Container(
+          //               height: 10,
+          //               width: 10,
+          //               decoration: BoxDecoration(
+          //                   color: Color.fromRGBO(248, 5, 5, 1.0),
+          //                   borderRadius: BorderRadius.circular(15)),
+          //               child: Text('22'),
+          //             ),
+          //           )
+          //         ],
+          //       );
+          //     },
+          //   ),
+          // )
         ],
       ),
     );
