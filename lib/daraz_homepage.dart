@@ -1,8 +1,10 @@
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Daraz_home extends StatelessWidget {
-List topmenu_name = [
+  //topmenu-list
+  List topmenu_name = [
     'Free \nShipping',
     'Food \nDelivery',
     'dMart',
@@ -37,6 +39,19 @@ List topmenu_name = [
     Color.fromRGBO(226, 183, 40, 1.0),
     Color.fromRGBO(252, 1, 40, 1.0),
     Color.fromRGBO(226, 183, 40, 1.0),
+  ];
+
+//topmenu list end
+
+  List Category_name = [
+    'T-Shirts',
+    'Phone Cases',
+    'Rings',
+    'Wireless Earbuds',
+    'Polo Shirts',
+    'Business',
+    'Cleaning Buckets Tubs',
+    'Brooms, Mops Sweepers'
   ];
 
   @override
@@ -120,15 +135,123 @@ List topmenu_name = [
                           borderRadius: BorderRadius.circular(50),
                         ),
                       ),
+                      SizedBox(
+                        height: 10,
+                      ),
                       Text(
                         topmenu_name[index],
                         style: TextStyle(
                           color: Colors.black,
                           fontSize: 10,
                         ),
+                        textAlign: TextAlign.center,
                       )
                     ],
                   ),
+                );
+              },
+            ),
+          ),
+          //top menu end
+          //Category Start
+          Padding(
+            padding: const EdgeInsets.only(left: 8.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text('Category', style: TextStyle(fontWeight: FontWeight.bold)),
+                TextButton(
+                    onPressed: () {},
+                    child: Text(
+                      'Shop More >',
+                      style: TextStyle(color: Colors.orange),
+                    ))
+              ],
+            ),
+          ),
+          Container(
+            height: 230,
+            color: Color.fromRGBO(240, 240, 240, 1.0),
+            child: GridView.builder(
+              scrollDirection: Axis.horizontal,
+              itemCount: 8,
+              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2,
+                  crossAxisSpacing: 0,
+                  mainAxisSpacing: 0,
+                  childAspectRatio: 100 / 99),
+              itemBuilder: (context, index) {
+                return Container(
+                  width: 90,
+                  child: InkWell(
+                    onTap: () {},
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      // mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Image.asset('assets/t-shirt.jpg', height: 60),
+                        SizedBox(
+                          height: 15.0,
+                        ),
+                        Text(
+                          Category_name[index],
+                          textAlign: TextAlign.center,
+                        )
+                      ],
+                    ),
+                  ),
+                );
+              },
+            ),
+          ),
+          //Category End
+          SizedBox(
+            height: 15,
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 8.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text('Flash Sale',
+                    style: TextStyle(fontWeight: FontWeight.bold)),
+                TextButton(
+                    onPressed: () {},
+                    child: Text(
+                      'Shop More >',
+                      style: TextStyle(color: Colors.orange),
+                    ))
+              ],
+            ),
+          ),
+          Container(
+            height: 120,
+            child: GridView.builder(
+              scrollDirection: Axis.horizontal,
+              gridDelegate:
+                  SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 1),
+              itemBuilder: (context, index) {
+                return Column(
+                  children: [
+                    Image.network(
+                      'https://www.collinsdictionary.com/images/full/tshirt_204029461_1000.jpg',
+                      height: 100,
+                    ),
+                    Container(
+                      height: 10,
+                      decoration: BoxDecoration(
+                          color: Color.fromRGBO(249, 192, 192, 1.0),
+                          borderRadius: BorderRadius.circular(15)),
+                      child: Container(
+                        height: 10,
+                        width: 10,
+                        decoration: BoxDecoration(
+                            color: Color.fromRGBO(248, 5, 5, 1.0),
+                            borderRadius: BorderRadius.circular(15)),
+                        child: Text('22'),
+                      ),
+                    )
+                  ],
                 );
               },
             ),
